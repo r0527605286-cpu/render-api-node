@@ -1,0 +1,18 @@
+# Dependency directories (התיקייה הכבדה שרנדר יתקין לבד)
+node_modules/
+
+# Environment variables (הקובץ הסודי עם המפתח של Render - חובה להסתיר!)
+.env
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Production build (אם תשתמשי בעתיד בפריימוורקים שדורשים Build)
+dist/
+build/
