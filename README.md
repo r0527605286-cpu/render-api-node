@@ -1,19 +1,27 @@
 # Render API Manager
 
-זהו שרת Node.js המשמש כמתווך (Proxy) מול ה-API של Render להצגת שירותים פעילים.
+A Node.js proxy server designed to interact with the Render API to fetch and display active services.
 
-## מה הפרויקט עושה?
-השרת מתחבר לחשבון ה-Render שלי, מושך את רשימת השירותים (Services) ומציג אותם בדפדפן בפורמט JSON.
+## Project Overview
 
-## הוראות הפעלה מהירות
-1. התקנת ספריות: הרץ `npm install` בטרמינל.
-2. הגדרת מפתח: צור קובץ `.env` והוסף בו: `RENDER_API_KEY=המפתח_שלך`.
-3. הרצה: הרץ `node index.js`.
+This server acts as an intermediary that connects to a specific Render account, retrieves the list of active services, and serves them to the browser in JSON format. It simplifies the process of monitoring service status through a centralized endpoint.
 
-## נתיבים בשרת
-- `/` : דף נחיתה עם הסבר.
-- `/services` : הצגת רשימת השירותים מתוך Render.
+## Features
 
-## דגשים
-- וודא שקובץ ה-`.env` נמצא ב-`.gitignore` כדי למנוע דליפת המפתח הסודי.
-- הפרויקט משתמש ב-Express ו-Axios.
+*   Secure communication with Render API using Axios.
+*   Express.js server architecture.
+*   Environment variable support for sensitive API keys.
+*   CORS-ready for integration with frontend applications.
+
+## Prerequisites
+
+*   Node.js installed on your machine.
+*   A valid Render API Key.
+
+## Installation
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install the required dependencies:
+   ```bash
+   npm install
